@@ -1,0 +1,40 @@
+{
+  "itemName" : "glitchPrimaryT3",
+  "price" : 960,
+  "level" : 3,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A premium titanium blade of glitch make.", //A nice Glitch broadsword.
+  "shortdescription" : "Titanium Glitch Broadsword", //Premium 2.0
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "/assets/weapons/glitch/glitchPrimaryT3.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "/assets/weapons/glitch/glitchPrimaryT3.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "spinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

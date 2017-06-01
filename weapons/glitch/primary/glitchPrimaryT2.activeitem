@@ -1,0 +1,40 @@
+{
+  "itemName" : "glitchPrimaryT2",
+  "price" : 960,
+  "level" : 2,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A stronger tungsten blade of glitch make.", //A solid Glitch broadsword.
+  "shortdescription" : "Tungsten Glitch Broadsword", //Upgrade 2.0
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "/assets/weapons/glitch/glitchPrimaryT2.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "/assets/weapons/glitch/glitchPrimaryT2.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "spinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

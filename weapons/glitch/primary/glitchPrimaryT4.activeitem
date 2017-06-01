@@ -1,0 +1,40 @@
+{
+  "itemName" : "glitchPrimaryT4",
+  "price" : 960,
+  "level" : 4,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "An exceedingly strong titanium blade of glitch make.", //A sword useful for taking out pests.
+  "shortdescription" : "Durasteel Glitch Broadsword", //Antivirus
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "/assets/weapons/glitch/glitchPrimaryT4.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "/assets/weapons/glitch/glitchPrimaryT4.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "superspinslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}

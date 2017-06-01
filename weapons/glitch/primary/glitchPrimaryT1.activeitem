@@ -1,0 +1,40 @@
+{
+  "itemName" : "glitchPrimaryT1",
+  "price" : 960,
+  "level" : 1,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A strong iron blade of Glitch make.", //A basic Glitch broadsword.
+  "shortdescription" : "Iron Glitch Broadsword", //Default 2.0
+  "tooltipKind" : "sword",
+  "category" : "broadsword",
+  "twoHanded" : true,
+  "itemTags" : ["weapon","melee","broadsword"],
+
+  "inventoryIcon" : "/assets/weapons/glitch/glitchPrimaryT1.png",
+
+  "animation" : "/items/active/weapons/melee/broadsword/combobroadsword.animation",
+  "animationParts" : {
+    "handle" : "",
+    "blade" : "/assets/weapons/glitch/glitchPrimaryT1.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/melee/swing_broadsword.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/melee/meleeweapon.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbilityType" : "broadswordcombo",
+  "primaryAbility" : {
+    "fireTime" : 0.83,
+    "baseDps" : 11.5
+  },
+
+  "altAbilityType" : "risingslash",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
