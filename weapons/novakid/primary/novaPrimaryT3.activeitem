@@ -22,7 +22,7 @@
   },
   "animationCustom" : {
     "sounds" : {
-      "fire" : [ "/rep1.ogg", "/rep2.ogg" ]
+      "fire" : [ "/sfx/rep1.ogg", "/sfx/rep2.ogg" ]
     }
   },
 
