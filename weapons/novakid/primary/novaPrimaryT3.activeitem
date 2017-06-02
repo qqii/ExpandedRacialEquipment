@@ -1,0 +1,86 @@
+{
+  "itemName" : "novakidPrimaryT3",
+  "price" : 960,
+  "maxStack" : 1,
+  "rarity" : "Uncommon",
+  "description" : "A power tungsten rifle.", //The gun that won't be tamed.
+  "shortdescription" : "Tungsten Rifle", //Kablammity Jane
+  "tooltipKind" : "gun",
+  "category" : "rifle",
+  "itemTags" : ["weapon","ranged","rifle"],
+  "twoHanded" : true,
+  "level" : 3,
+
+  "inventoryIcon" : "/assets/weapons/novakid/novakidPrimaryT3.png",
+
+  "animation" : "/assets/weapons/genranged/azgun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/assets/weapons/novakid/novakidPrimaryT3.png",
+    "barrel" : "",
+    "muzzleFlash" : "/assets/weapons/genranged/defaultmuzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/rep1.ogg", "/rep2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.5, 0.0],
+  "muzzleOffset" : [1.875, 0.125],
+
+  "scripts" : ["/scripts/ranged/azgun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/scripts/ranged/azgunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.7,
+    "baseDps" : 8.5,
+    "energyUsage" : 25.5,
+    "inaccuracy" : 0.008,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : { 
+      "knockback" : 16
+    },
+
+   "stances" : {
+     "idle" : {
+       "armRotation" : 0,
+       "weaponRotation" : 0,
+       "twoHanded" : true,
+
+       "allowRotate" : true,
+       "allowFlip" : true
+     },
+     "fire" : {
+       "duration" : 0,
+       "armRotation" : 5,
+       "weaponRotation" : 5,
+       "twoHanded" : true,
+
+       "allowRotate" : false,
+       "allowFlip" : false
+     },
+     "cooldown" : {
+       "duration" : 0.25,
+       "armRotation" : 5,
+       "weaponRotation" : 5,
+       "twoHanded" : true,
+
+       "allowRotate" : false,
+       "allowFlip" : false
+     }
+   }
+  },
+
+  "altAbilityType" : "piercingshot",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
