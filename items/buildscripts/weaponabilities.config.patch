@@ -1,0 +1,7 @@
+[
+  {
+    "op": "add",
+    "path": "/flurrycombo",
+    "value": "/weapons/abilities/flurrycombo.weaponability"
+  }
+]
