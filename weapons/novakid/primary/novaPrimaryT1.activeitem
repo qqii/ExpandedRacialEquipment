@@ -1,16 +1,17 @@
 {
   "itemName" : "novakidPrimaryT1",
-  "price" : 170,
-  "inventoryIcon" : "/assets/weapons/novakid/novakidPrimaryT1.png",
+  "price" : 960,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A simple but sturdy iron rifle.",
-  "shortdescription" : "Iron Rifle",
-  "level" : 1,
+  "description" : "A simple but sturdy iron rifle.", //An interstellar take on a fabled Earth rifle.
+  "shortdescription" : "Iron Rifle", //Winchestar
   "tooltipKind" : "gun",
-  "weaponType" : "Rifle",
+  "category" : "rifle",
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : true,
+  "level" : 1,
+
+  "inventoryIcon" : "/assets/weapons/novakid/novakidPrimaryT1.png",
 
   "animation" : "/assets/weapons/genranged/azgun.animation",
   "animationParts" : {

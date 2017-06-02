@@ -1,16 +1,17 @@
 {
   "itemName" : "novakidPrimaryT0",
-  "price" : 820,
-  "inventoryIcon" : "/assets/weapons/novakid/novakidPrimaryT0.png",
+  "price" : 500,
   "maxStack" : 1,
   "rarity" : "Common",
-  "description" : "A rusty rifle. Perhaps it was once useful.",
-  "shortdescription" : "Broken Rifle",
-  "level" : 1,
+  "description" : "A rusty rifle. Perhaps it was once useful.", //A gun only as accurate as the shooter.
+  "shortdescription" : "Broken Rifle", //Red Ryder
   "tooltipKind" : "gun",
-  "weaponType" : "Rifle",
+  "category" : "rifle",
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : true,
+  "level" : 1,
+
+  "inventoryIcon" : "/assets/weapons/novakid/novakidPrimaryT0.png",
 
   "animation" : "/assets/weapons/genranged/azgun.animation",
   "animationParts" : {
