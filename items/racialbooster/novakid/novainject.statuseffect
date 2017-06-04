@@ -1,0 +1,11 @@
+{
+  "name" : "novainject",
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "inject.lua"
+  ],
+
+  "animationConfig" : "glow.animation"
+}

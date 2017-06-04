@@ -1,0 +1,13 @@
+{
+  "name" : "novastim",
+  "effectConfig" : {},
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "stim.lua"
+  ],
+
+  "animationConfig" : "glow.animation",
+  "label" : "Fusion Overdrive",
+  "icon" : "/interface/statuses/glow.png"
+}
