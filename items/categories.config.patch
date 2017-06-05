@@ -18,5 +18,15 @@
     "op": "add",
     "path": "/labels/blunderbuss",
     "value": "Blunderbuss"
+  },
+  {
+    "op": "add",
+    "path": "/labels/revolver",
+    "value": "Revolver"
+  },
+  {
+    "op": "add",
+    "path": "/labels/musket",
+    "value": "Musket"
   }
 ]
