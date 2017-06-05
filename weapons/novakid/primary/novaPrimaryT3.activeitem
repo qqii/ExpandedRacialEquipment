@@ -3,10 +3,10 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Uncommon",
-  "description" : "A power tungsten rifle.", //The gun that won't be tamed.
-  "shortdescription" : "Tungsten Rifle", //Kablammity Jane
+  "description" : "A powerful tungsten repeater.", //The gun that won't be tamed.
+  "shortdescription" : "Tungsten Repeater", //Kablammity Jane
   "tooltipKind" : "gun",
-  "category" : "rifle",
+  "category" : "repeater",
   "itemTags" : ["weapon","ranged","rifle"],
   "twoHanded" : true,
   "level" : 3,

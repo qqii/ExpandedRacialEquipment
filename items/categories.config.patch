@@ -3,5 +3,20 @@
     "op": "add",
     "path": "/labels/rifle",
     "value": "Rifle"
+  },
+  {
+    "op": "add",
+    "path": "/labels/repeater",
+    "value": "Repeater"
+  },
+  {
+    "op": "add",
+    "path": "/labels/chaingun",
+    "value": "Chaingun"
+  },
+  {
+    "op": "add",
+    "path": "/labels/blunderbuss",
+    "value": "Blunderbuss"
   }
 ]
