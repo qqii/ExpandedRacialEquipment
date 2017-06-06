@@ -3,8 +3,10 @@
   "price" : 960,
   "maxStack" : 1,
   "rarity" : "Rare",
-  "description" : "A power tungsten rifle.", //This rifle has a bad attitude.
-  "shortdescription" : "Ferozium Musket", //Fierce Repeater
+  "description" : "A ferocius ferozium musket.", //No one really knows how this gun works, or why it's so pink.
+  "shortdescription" : "Ferozium Musket", //Almighty Magnetar
+  //Past tier 4, what material weapons are from gets ambiguous, because they it's rubium/cerulium
+  //This name and description are what the sprite is based off of.
   "tooltipKind" : "gun",
   "category" : "musket",
   "itemTags" : ["weapon","ranged","rifle"],
@@ -81,6 +83,12 @@
   },
 
   "altAbilityType" : "piercingshot",
+  "altAbility" : {
+    "projectileType" : "piercingferoziumbullet",
+    "projectileParameters" : {
+      "piercing" : true
+    }
+  },
 
   "builder" : "/items/buildscripts/buildunrandweapon.lua"
 }
