@@ -28,5 +28,10 @@
     "op": "add",
     "path": "/labels/musket",
     "value": "Musket"
+  },
+  {
+    "op": "add",
+    "path": "/labels/dragon",
+    "value": "Dragon"
   }
 ]
