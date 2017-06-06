@@ -1,0 +1,85 @@
+{
+  "itemName" : "humanPrimaryT0",
+  "price" : 500,
+  "maxStack" : 1,
+  "rarity" : "Common",
+  "description" : "A rusty rifle. Perhaps it was once useful.",
+  "shortdescription" : "Disused Rifle",
+  "tooltipKind" : "gun",
+  "category" : "assaultRifle",
+  "itemTags" : ["weapon","ranged","rifle"],
+  "twoHanded" : true,
+  "level" : 1,
+
+  "inventoryIcon" : "/assets/weapons/human/humanPrimaryT0.png",
+
+  "animation" : "/assets/weapons/genranged/azgun.animation",
+  "animationParts" : {
+    "butt" : "",
+    "middle" : "/assets/weapons/human/humanPrimaryT0.png",
+    "barrel" : "",
+    "muzzleFlash" : "/assets/weapons/genranged/defaultmuzzleflash.png"
+  },
+  "animationCustom" : {
+    "sounds" : {
+      "fire" : [ "/sfx/gun/rifle1.ogg", "/sfx/gun/rifle2.ogg" ]
+    }
+  },
+
+  "baseOffset" : [0.6, 0.15],
+  "muzzleOffset" : [2.2, 0.125],
+
+  "scripts" : ["/scripts/ranged/azgun.lua"],
+
+  "elementalType" : "physical",
+
+  "primaryAbility" : {
+    "scripts" : ["/items/active/weapons/ranged/gunfire.lua"],
+    "class" : "GunFire",
+
+    "fireTime" : 0.10,
+    "baseDps" : 7.5,
+    "energyUsage" : 31.5,
+    "inaccuracy" : 0.02,
+
+    "projectileCount" : 1,
+    "fireType" : "auto",
+
+    "projectileType" : "standardbullet",
+    "projectileParameters" : {
+      "knockback" : 5
+    },
+    "stances" : {
+      "idle" : {
+        "armRotation" : 0,
+        "weaponRotation" : 0,
+        "twoHanded" : true,
+
+        "allowRotate" : true,
+        "allowFlip" : true
+      },
+      "fire" : {
+        "duration" : 0,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      },
+      "cooldown" : {
+        "duration" : 0.11,
+        "armRotation" : 3,
+        "weaponRotation" : 3,
+        "twoHanded" : true,
+
+        "allowRotate" : false,
+        "allowFlip" : false
+      }
+    }
+  },
+
+  "altAbilityType" : "spray",
+
+  "builder" : "/items/buildscripts/buildunrandweapon.lua"
+}
