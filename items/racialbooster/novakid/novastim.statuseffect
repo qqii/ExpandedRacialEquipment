@@ -4,10 +4,10 @@
   "defaultDuration" : 1,
 
   "scripts" : [
-    "stim.lua"
+    "novastim.lua"
   ],
 
-  "animationConfig" : "glow.animation",
+  "animationConfig" : "novastim.animation",
   "label" : "Fusion Overdrive",
   "icon" : "/interface/statuses/glow.png"
 }

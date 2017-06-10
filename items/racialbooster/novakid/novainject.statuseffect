@@ -1,11 +1,15 @@
 {
   "name" : "novainject",
-  "effectConfig" : {},
+  "effectConfig" : {
+    "race" : "novakid",
+    "goodEffect" : "novastim",
+    "goodLength" : 5,
+    "badEffect" : "burning",
+    "badLength" : 5
+  },
   "defaultDuration" : 1,
 
   "scripts" : [
-    "inject.lua"
-  ],
-
-  "animationConfig" : "glow.animation"
+    "/items/racialbooster/inject.lua"
+  ]
 }
