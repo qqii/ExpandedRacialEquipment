@@ -28,7 +28,7 @@ end
 --Body1=BodyColor1; Body2=BodyColor2; Body3=BodyColor3; Body4=BodyColor4; Hair1=HairColor1
 --len = 127
 
-function hextorgb (hex) -- Hexer Dexer RGBexer
+function hextorgb(hex) -- Hexer Dexer RGBexer
     dexedhex = {}
 
     if string.len(hex) ~= 6 then
@@ -51,3 +51,79 @@ function hextorgb (hex) -- Hexer Dexer RGBexer
         return dexedhex
     end
 end
+
+function rgbtohsl(rgb)
+    rgbp = {0, 0, 0}
+    for k, v in ipairs(rgb) do
+        rgbp[k] = rgb[k] / 255
+    end
+
+    cmax = math.max(rgbp[1], rgbp[2], rgbp[3])
+    cmin = math.min(rgbp[1], rgbp[2], rgbp[3])
+    delta = cmax - cmin
+
+    if delta == 0 then
+        h = 0
+    elseif cmax == rgbp[1] then
+        h = 60 * (((rgbp[2] - rgbp[3]) / delta) % 6)
+    elseif cmax == rgbp[2] then
+        h = 60 * (((rgbp[3] - rgbp[1]) / delta) + 2)
+    elseif cmax == rgbp[3] then
+        h = 60 * (((rgbp[1] - rgbp[2]) / delta) + 4)
+    end
+
+    l = (cmax + cmin) / 2
+
+    if delta == 0 then
+        s = 0
+    elseif delta > 0 or delta < 0 then
+        s = (delta / (1 - math.abs((2 * l) - 1)))
+    end
+
+    hsl = {h, s, l}
+
+    return hsl
+end
+
+function hsltorgb(hsl)
+    c = (1 - math.abs((2 * hsl[3]) -1)) * hsl[2]
+
+    x = c * (1 - math.abs((hsl[1]/60) % 2 - 1))
+
+    m = hsl[3] - c/2
+
+    rgbp = {}
+    if 0 <= hsl[1] and hsl[1] < 60 then
+        table.insert(rgbp, c)
+        table.insert(rgbp, x)
+        table.insert(rgbp, 0)
+    elseif 60 <= hsl[1] and hsl[1] < 120 then
+        table.insert(rgbp, x)
+        table.insert(rgbp, c)
+        table.insert(rgbp, 0)
+    elseif 120 <= hsl[1] and hsl[1] < 180 then
+        table.insert(rgbp, 0)
+        table.insert(rgbp, c)
+        table.insert(rgbp, x)
+    elseif 180 <= hsl[1] and hsl[1] < 240 then
+        table.insert(rgbp, 0)
+        table.insert(rgbp, x)
+        table.insert(rgbp, c)
+    elseif 240 <= hsl[1] and hsl[1] < 300 then
+        table.insert(rgbp, x)
+        table.insert(rgbp, 0)
+        table.insert(rgbp, c)
+    elseif 300 <= hsl[1] and hsl[1] < 360 then
+        table.insert(rgbp, c)
+        table.insert(rgbp, 0)
+        table.insert(rgbp, x)
+    end
+
+    rgb = {}
+    for k, v in ipairs(rgbp) do
+        table.insert(rgb, (v+m) * 255)
+    end
+
+    return rgb
+end
+
