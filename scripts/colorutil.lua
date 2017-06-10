@@ -27,20 +27,27 @@ end
 --replace;806319=0d500f;f6b919=17dc0d;fde03f=63f574;fff8b5=c7ffdc?replace;951500=417356;be1b00=6bb383;f32200=daffe5;dc1f00=97ecb0
 --Body1=BodyColor1; Body2=BodyColor2; Body3=BodyColor3; Body4=BodyColor4; Hair1=HairColor1
 --len = 127
---
 
-function hextorgb (hex)
+function hextorgb (hex) -- Hexer Dexer RGBexer
+    dexedhex = {}
+
     if string.len(hex) ~= 6 then
-        sb.logWarn("Invalid Hexadecimal! @colorutil.lua")
-        return
+        sb.logWarn("Invalid hexadecimal color length! hextorgb() implementations must be passed 6-character variables.")
+        return nil
     else
-        hex1 = string.sub(hex, 1, 2)
-        hex2 = string.sub(hex, 3, 4)
-        hex3 = string.sub(hex, 5, 6)
+--        hex1 = string.sub(hex, 1, 2)
+--        hex2 = string.sub(hex, 3, 4)
+--        hex3 = string.sub(hex, 5, 6)
 
-        redChannel = tonumber(chan1, 16)
-        greenChannel = tonumber(chan2, 16)
-        blueChannel = tonumber(chan3, 16)
+        for i = 1, 3 do
+            table.insert(dexedhex, i, tonumber(string.sub(hex, 1 + (2 * (i - 1)), 2 + (2 * (i - 1))), 16))
+            -- woah, mathematics
+        end
 
+--        redChannel = tonumber(chan1, 16)
+--        greenChannel = tonumber(chan2, 16)
+--        blueChannel = tonumber(chan3, 16)
+
+        return dexedhex
     end
 end
