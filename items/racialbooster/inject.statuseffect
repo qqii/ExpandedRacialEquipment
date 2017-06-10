@@ -1,0 +1,15 @@
+{
+  "name" : "inject",
+  "effectConfig" : {
+    "race" : "human",
+    "goodEffect" : "salveheal",
+    "goodLength" : 5,
+    "badEffect" : "burning",
+    "badLength" : 5
+  },
+  "defaultDuration" : 1,
+
+  "scripts" : [
+    "inject.lua"
+  ]
+}
