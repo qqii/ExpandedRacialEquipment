@@ -1,0 +1,19 @@
+{
+  "itemName" : "aztest",
+  "price" : 0,
+  "level" : 1,
+  "maxStack" : 1000,
+  "rarity" : "Common",
+  "category" : "mysteriousReward",
+  "description" : "What?",
+  "shortdescription" : "AzTest",
+  "twoHanded" : true,
+
+  "inventoryIcon" : "aztesticon.png",
+  "animation" : "aztest.animation",
+  "animationCustom" : {},
+  "scripts" : ["aztest.lua"],
+
+  "fireTime" : 1.0,
+  "fireOffset" : [0.5, 0.0]
+}

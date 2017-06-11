@@ -1,6 +1,7 @@
 require "/scripts/util.lua"
 require "/scripts/vec2.lua"
-require "/items/active/weapons/weapon.lua"
+require "/scripts/ranged/azweapon.lua"
+--require "/items/active/weapons/weapon.lua"
 
 function init()
   activeItem.setCursor("/cursors/reticle0.cursor")
@@ -22,8 +23,8 @@ function init()
   self.weapon:init()
 end
 
-function update(dt, fireMode, shiftHeld)
-  self.weapon:update(dt, fireMode, shiftHeld)
+function update(dt, fireMode, shiftHeld, moves)
+  self.weapon:update(dt, fireMode, shiftHeld, moves)
 end
 
 function uninit()
