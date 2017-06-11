@@ -7,7 +7,7 @@
   "frameNumber" : 1,
   "power" : 50,
   "speed" : 20,
-  "timeToLive" : 20,
+  "timeToLive" : 100,
   "lightColor" : [80, 190, 60],
   "damageKind" : "plasma",
   "knockback" : 2,
@@ -68,7 +68,7 @@
   "scripts" : ["/scripts/waveprojectile.lua"],
   "scriptDelta" : 1,
 
-  "wavePeriod" : 0.25,
+  "wavePeriod" : 0.5,
   "waveAmplitude" : 1.25,
 
   "persistentAudio" : "/sfx/projectiles/raygun_wobble_loop.ogg"
